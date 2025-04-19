@@ -1,3 +1,65 @@
+# 💼 LokalApp - Job Listings (React Native)
+
+A simple yet modern React Native app that fetches job listings from an API using **Axios**, displays them using **Zustand** for state management, and implements **infinite scroll**, with clean UI and robust handling of loading, error, and empty states.
+
+---
+
+## ✨ Features
+
+- ⚡ Fast API data fetching using **Axios**
+- 📦 Global state management with **Zustand**
+- 🔁 Infinite scrolling with pagination support
+- 🔃 Retry mechanism for failed requests
+- 📴 Empty state and loading spinners
+- 🎨 Clean, modern and responsive UI
+- 📱 Designed for smooth mobile experience
+
+---
+
+## 🔗 API Endpoint
+
+https://testapi.getlokalapp.com/common/jobs?page=1
+
+---
+
+## 📦 Tech Stack
+
+- **React Native** (with Functional Components & Hooks)
+- **Zustand** for global state
+- **Axios** for network requests
+- **FlatList** for infinite scroll
+
+---
+## Output 
+![Screenshot 2025-04-19 104058](https://github.com/user-attachments/assets/19bc448f-ea04-4ef7-b7f8-2bc9f5253db6)
+
+
+
+## 🚀 Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/your-username/lokalapp-joblistings.git
+cd lokalapp-joblistings
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the project
+npx react-native run-android # for Android
+npx react-native run-ios     # for iOS
+---
+# 4. Folder Structure
+.
+├── App.js
+├── /api
+│   └── jobApi.js           # Axios wrapper for API
+├── /store
+│   └── useJobStore.js      # Zustand global store
+├── /components
+│   ├── JobCard.js          # Card UI for job item
+│   └── StateViews.js       # UI components for loading, error, empty
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
